@@ -3,6 +3,7 @@ package com.example.multiplytable
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,12 +17,18 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        //created variable to hold the homescreen elements
         val multiplyButton = findViewById<Button>(R.id.multiplyButton)
+        val numInput = findViewById<EditText>(R.id.numTextInput)
+
+        //created a button click listener to listen for button click
         multiplyButton.setOnClickListener {
+
+            //created an intent to switch between pages
           //create the explicit intent
             val intent = Intent(this,TableDisplay::class.java)
             startActivity(intent)
-            
+
 
         }
 
