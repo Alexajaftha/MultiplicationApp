@@ -23,6 +23,12 @@ class TableDisplay : AppCompatActivity() {
 
         //added another variable for the multiply table
         val multiplyTable = findViewById<TextView>(R.id.tableDisplayText)
+        val timesDisplay: String = "$tableNumber x tables\n\n"
+        multiplyTable.text = timesDisplay
+
+        
+
+
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
