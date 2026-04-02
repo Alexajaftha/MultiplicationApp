@@ -38,6 +38,8 @@ class TableDisplay : AppCompatActivity() {
                 continue
             }
 
+            //expanding the table to times 20
+
 
 
             //example: user enters 5 and count is 1 so: 5 x 1 = (Answer)
