@@ -32,6 +32,14 @@ class TableDisplay : AppCompatActivity() {
 
 
         while ( count <= 10 ) {
+            //skip 3
+            if (count == 4) {
+                count++
+                continue
+            }
+
+
+
             //example: user enters 5 and count is 1 so: 5 x 1 = (Answer)
             val answer = tableNumber * count
             //displays as: 5 x 1 = 5
